@@ -52,11 +52,13 @@ public class MainChatConn {
 							ms = temp.split("/\\S+\\s+\\S+\\s+");
 							queue.mail(s[1], ms[1]);
 						} else {
-							System.err.println("Wrong Usage! Please insert in the Command /n Line follwoing information <destination_username> <message>");
+							System.err.println("Wrong Usage! Please insert in the Command "
+									+ "Line follwoing information <destination_username> <message>");
 						}					
 					} else {
 						topic.send(temp.toString()); // wenn keine "Funktion" ausgesucht wird, dann wird der Text als einfachen chat versendet
 					}
+					
 				}
 			} catch (IOException e) {
 				// TODO Auto-generated catch block
